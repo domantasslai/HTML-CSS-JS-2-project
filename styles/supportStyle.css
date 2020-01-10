@@ -1,0 +1,214 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+  color: #ff4c68;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 32px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+
+    .nav-link {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 13px 16px;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        color: #616161;
+
+
+        &.active {
+            background-color: #ff4c68;
+            font-weight: 700;
+            color: rgba(0,0,0,.87);
+        }
+
+        &:last-of-type {
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom: 0;
+        }
+
+        i.mdi {
+            margin-right: 5px;
+            font-size: 18px;
+            position: relative;
+        }
+    }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #ff4c68;
+}
+a{
+  color: #ff4c68;
+}
+.card-header{
+  background-color: #ff4c68;
+
+}
+.btn-link{
+  color: #303030;
+  color: #fff;
+}
+
+.fa-search{
+  color: #ff4c68;
+}
+
+.card-body{
+  background-color: #ef8172;
+}
+
+.card-body p{
+    color: #fff;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+.background .big-heading{
+  margin-bottom: 5%;
+}
+
+
+/* .shadow, .container-fluid{
+  padding: 0 7% 2%;
+} */
+
+/* .shadow .container-fluid .insideShadow{
+  -webkit-box-shadow: 9px 8px 22px 5px rgba(0,0,0,0.71);
+  box-shadow: 9px 8px 22px 5px rgba(0,0,0,0.71);
+} */
+
+.background{
+  /* background-color: #fff; */
+}
+/* Sections */
+
+.colored-section {
+  background-color: ;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 3% 40%;
+
+}
+
+.pricing-button{
+  margin-top: 100px;
+}
+
+.pricing-button-{
+  margin-top:60px;
+}
+/* Title Section */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 3% 0;
+}
+
+.card{
+  border-radius: 50px;
+  /* -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; */
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+/* Form */
+
+.shadow form{
+  padding: 0 30%;
+}
+
+
+.sign-up-tag{
+  color: #95a7b5;
+}
+
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.mode{
+  background-color: #232323;;
+  color: white;
+}
+
+@media (max-width:991px) {
+  .title-image{
+    display: none;
+  }
+}

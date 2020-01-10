@@ -1,0 +1,34 @@
+function formValidation() {
+  var passid = document.login.passid;
+  var uemail = document.login.email;
+  if (ValidateEmail(uemail)) {
+    if (passid_validation(passid, 5, 35)) {
+      return true;
+    }
+  }
+
+  return false;
+
+}
+
+
+function passid_validation(passid, mx, my) {
+  var passid_len = passid.value.length;
+  if (passid_len == 0 || passid_len >= my || passid_len < mx) {
+    alert("Password should not be empty / length be between " + mx + " to " + my);
+    passid.focus();
+    return false;
+  }
+  return true;
+}
+
+
+function ValidateEmail(uemail) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (uemail.value.match(mailformat)) {
+    return true;
+  } else {
+    alert("You have entered an invalid email address!");
+    return false;
+  }
+}
